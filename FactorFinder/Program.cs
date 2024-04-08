@@ -17,3 +17,7 @@ List<int> Finder(int num)
     return factors;
 }
 
+
+{ Console.WriteLine("Joachim is the ultimate githubber"); }
+
+
