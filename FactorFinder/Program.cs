@@ -17,4 +17,4 @@ List<int> Finder(int num)
     return factors;
 }
 
-Console.WriteLine("Jan-Roger Github superstar");
+Console.WriteLine("Jan-Roger Github superstar!");
