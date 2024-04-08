@@ -19,8 +19,25 @@ List<int> Finder(int num)
 {
     
     List<int> factors = new List<int>();
-    
-    Console.WriteLine("does this help with your work Craig? or is it something else you need?");
+    List<int> usedFactors = new List<int>();
+    for (int i = 2; i <= num; i++)
+    {
+        foreach (int usedFactor in usedFactors)
+        {
+            if (i % usedFactor == 0)
+            {
+                //divisible by a previous number
+                goto skip;
+            }
+        }
+        if (num % i == 0)
+        {
+            factors.Add(i);
+            
+            usedFactors.Add(i);
+        }
+        skip: ;
+    }
 
     return factors;
 }
