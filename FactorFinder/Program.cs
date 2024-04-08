@@ -19,7 +19,8 @@ List<int> Finder(int num)
 {
     
     List<int> factors = new List<int>();
-
+    
+    Console.WriteLine("does this help with your work Craig? or is it something else you need?");
 
     return factors;
 }
